@@ -1,0 +1,47 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "description",
+  "keywords": [],
+  "author": "author",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "browser-sync": "^2.26.3",
+    "compass-mixins": "^0.12.10",
+    "css-mqpacker": "^7.0.0",
+    "gulp": "^4.0.0",
+    "gulp-ejs": "^3.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.12.0",
+    "node-sass-globbing": "0.0.23",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.5.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@types/animejs": "^2.0.2",
+    "@types/gsap": "^1.20.2",
+    "@types/jquery": "^3.3.29",
+    "@types/slick-carousel": "^1.6.32",
+    "@types/underscore": "^1.8.13",
+    "animejs": "^3.0.1",
+    "fs": "0.0.1-security",
+    "gsap": "^2.1.2",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
+    "slick-carousel": "^1.8.1",
+    "underscore": "^1.9.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie 9"
+  ],
+  "private": true
+}

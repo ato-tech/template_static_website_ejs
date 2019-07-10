@@ -1,0 +1,61 @@
+.c-title01{
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  display: grid;
+  &:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    margin: 0.4em auto 0;
+  }
+}
+
+.c-formInputText01{
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 2px;
+  overflow: hidden;
+  label{
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    transition: .3s;
+
+    &:after{
+      content: "";
+      display: block;
+      transition: .4s;
+      width: 0;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #EC822C;
+      transition: .2s;
+    }
+  }
+
+  input{
+    width: 100%;
+    height: 5rem;
+    padding: 10px;
+    border-bottom: 1px solid #292929;
+    box-shadow: -999px 1px 0px #ccc;
+    transition: .3s;
+
+    &:focus{
+      border-bottom: 1px solid #EC822C;
+      box-shadow: 0 1px 0px #EC822C;
+      + label{
+        font-size: 1rem;
+        top: 0.5em;
+        :after{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

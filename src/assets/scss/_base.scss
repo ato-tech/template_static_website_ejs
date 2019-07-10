@@ -1,0 +1,54 @@
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+}
+body{
+  position: relative;
+  font-family: $font;
+  line-height: 1.6;
+  min-width: 320px;
+  height: 100%;
+  font-size: 1.6em;
+  -webkit-text-size-adjust: 100%;
+
+  @include sp{
+    /* sp */
+  }
+  @include pc{
+    /* pc */
+  }
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+img[src*=".svg"] {
+  max-width: none;
+  width: 100%;
+}
+a{
+  color: inherit;
+  transition: opacity .4s;
+  text-decoration: none;
+}
+input,select,textarea,button{
+  font-family: inherit;
+  outline: none;
+  appearance: none;
+  border: 0;
+}
+@include pc{
+  .l-spOnly {
+    display: none !important;
+  }
+}
+@include sp{
+  .l-pcOnly {
+    display: none !important;
+  }
+}

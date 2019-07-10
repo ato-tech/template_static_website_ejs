@@ -1,0 +1,48 @@
+//  path
+$imgPath: "../image/";
+
+//  width
+$bp: 768px;
+$tb: 1024px;
+$pcMaxWidth: 1200px;
+
+$spDesignWidth: 375;
+
+$padding: 20px;
+
+//  font
+$font: 'Oswald', "Noto Sans JP", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+
+//  color
+$mainColor: #031648;
+$subColor: #FF414C;
+$Gray: #D3D3D3;
+$Lunch: linear-gradient(135deg, #FF414C 0%, #FFEC00 100%);
+$gold: linear-gradient(135deg, #FFF795 0%, #FFB800 100%);
+$silver: linear-gradient(135deg, #F6F6F6 0%, #F4F4F4 49.49%, #D3D3D3 100%);
+$darkGrey: #2F353C;
+
+$textColor: $darkGrey;
+
+//  z-index;
+$spBtn: 980;
+$spMenu: 970;
+$header: 960;
+$pagetop: 950;
+
+//  calc
+@function vw($size){
+  @return floor($size / $spDesignWidth * 1000000vw) / 10000;
+}
+
+//  mediaquery
+@mixin sp{
+  @media screen and (max-width:$bp) {
+    @content;
+  }
+}
+@mixin pc{
+  @media print, screen and (min-width:$bp + 1) {
+    @content;
+  }
+}
