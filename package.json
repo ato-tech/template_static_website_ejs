@@ -7,7 +7,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.4.5",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "compass-mixins": "^0.12.10",
     "css-mqpacker": "^7.0.0",
     "gulp": "^4.0.0",
